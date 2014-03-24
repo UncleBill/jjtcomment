@@ -27,7 +27,7 @@
             editor.innerHTML += appendtext;
             editor.focus();
             var select = window.getSelection();
-            select.collapse(editor, editor.innerHTML.length );
+            select.collapse(editor, true );
         }, false);
     }
 }());

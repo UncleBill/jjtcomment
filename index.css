@@ -5,7 +5,7 @@
 }
 .comment-item{
     margin: 20px 10px;
-    border-bottom: 1px dashed #555;
+    border-bottom: 1px dashed rgb(210,210,210);
     position: relative;
 }
 .avatar{
@@ -31,11 +31,11 @@
 .user-name{
     font-style: 13px;
     margin-right:10px;
-    color: #555;
+    color: rgb(150,150,100);
     text-decoration: none;
 }
 .time-stamp{
-    color: #888;
+    color: rgb(210,210,210);
     font-style: 12px;
     cursor:default;
 }
@@ -49,38 +49,52 @@
 }
 .comment-control a{
     font-style: 12px;
-    color: #555;
+    color: rgb(160,160,160);
     text-decoration: none;
 }
+.user-name:hover,
+.user-name:focus,
+.comment-control a:hover,
+.comment-control a:focus{
+    text-decoration: underline;
+}
 .comment-box{
-    border-bottom:1px solid #888 ;
+    border-bottom: 1px solid rgb(219, 218, 218);
+}
+.comment-box .right-content{
+    margin-bottom:30px;
 }
 .comment-box .right-content{
     margin-right:5px;
 }
 .comment-editor{
-    border: 1px solid #777;
+    border: 1px solid rgb(210,210,210);
     border-radius: 5px;
     min-height:40px;
     padding:10px;
     margin-bottom:10px;
 }
+.comment-editor:hover,
+.comment-editor:focus{
+    outline:none;
+    box-shadow:inset 0 1px 2px rgba(0,0,0,0.075),0 0 5px rgba(81,167,232,0.5);
+}
 .editor-button a{
     display: inline-block;
     height:30px;
     width: 100px;
-    border: 1px solid #896;
+    border: 1px solid rgb(150,150,150);
     border-radius:3px;
     margin-right:5px;
     font-style: 12px;
     text-decoration: none;
     text-align: center;
     line-height: 30px;
-    background-color: #7ff;
+    background-color: rgb(204,204,204);
     transition: all 0.3s;
 }
 .editor-button .editor-button-post{
-    background-color: #896;
+    background-color: rgb(60,130,140);
     color: #fff;
 }
 .editor-button .editor-button-cancel{
@@ -94,5 +108,13 @@
 .editor-button .editor-button-cancel:hover,
 .editor-button .editor-button-cancel:focus{
     background-color: #7aa;
+    color: #eee;
+}
+.editor-button .editor-button-post:active{
+    background-color: #fa4;
+    color: #fff;
+}
+.editor-button .editor-button-cancel:active{
+    background-color: #7af;
     color: #eee;
 }
